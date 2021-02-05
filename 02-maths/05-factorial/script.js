@@ -15,8 +15,29 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        let x = document.getElementById("number").value;
 
-    });
+        function factorial(x) {
+ 
+        if (x < 0)
+        {
+            return "Choose a number > or = 0";
+        }
 
-})();
+        else if (x == 0)
+        {
+            return 1;
+        }
+
+        else {}
+
+            return x * factorial(x-1);
+                
+        }
+
+        alert(factorial(x));
+
+
+            });
+
+        })();
