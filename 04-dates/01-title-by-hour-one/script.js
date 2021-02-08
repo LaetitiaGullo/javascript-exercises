@@ -19,7 +19,7 @@
         document.getElementById("target").innerHTML = "Hello";
     }
 
-    else if (x > 18) {
+    else if (x >= 18) {
         document.getElementById("target").innerHTML = "Good evening";
     }
 

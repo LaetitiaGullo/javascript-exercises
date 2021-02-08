@@ -12,5 +12,16 @@
 (function() {
 
     var d = new Date();
-    document.getElementById("target").innerHTML = d;
+    console.log(d);
+
+    var date = d.toLocaleDateString('en-US',{
+        weekday: 'long',
+        day: '2-digit',
+        month: 'long',
+        year: 'numeric',
+    });
+
+    var hour = d.toLocaleTimeString('fr-FR');
+
+    document.getElementById("target").innerHTML = date + " - " + hour;
 })();
