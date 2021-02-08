@@ -11,6 +11,14 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
 
+        var birthYear = document.getElementById("dob-year").value;
+
+        var d = new Date();
+        var currentYear = d.getFullYear();
+        
+        console.log(currentYear-birthYear);
+
+    });
 })();
