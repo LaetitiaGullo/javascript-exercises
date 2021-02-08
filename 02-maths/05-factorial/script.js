@@ -17,7 +17,7 @@
 
         let x = document.getElementById("number").value;
 
-        function factorial(x) {
+        function fact(x) {
  
         if (x < 0)
         {
@@ -29,13 +29,13 @@
             return 1;
         }
 
-        else {}
 
-            return x * factorial(x-1);
+        console.log(x);    
+        return x * fact(x-1);
                 
         }
 
-        alert(factorial(x));
+        alert(fact(x));
 
 
             });
