@@ -13,22 +13,28 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
+        // User input
         var birthDay = document.getElementById("dob-day").value;
         var birthMonth = document.getElementById("dob-month").value;
         var birthYear = document.getElementById("dob-year").value;
 
 
+        // Current date
         var d = new Date();
+        var currentDay = d.getDate();
+        var currentMonth = d.getMonth()+1;
         var currentYear = d.getFullYear();
-        var currentMonth = d.getMonth();
-        var currentDay = d.getDay();
 
         var age = currentYear-birthYear;
 
-        if (currentMonth<birthMonth || currentMonth==birthMonth && currentDay<birthDay) {
-            age--;
+        if (currentMonth <= birthMonth & currentDay < birthDay) {
+            console.log(age-1);
         }
-        console.log(age);
         
+        else {
+            console.log(age);
+        }
+       
    });
+
 })();

@@ -11,15 +11,15 @@
 
 (function() {
 
-  var answer = prompt("Do you want some cake ?");
+  var answer = prompt("Do you want some cake ?").toLowerCase();
 
   if (answer == "yes") {
     alert("Congratulations !");    
   }
 
-  else if (answer == "Yes") {
+  /* else if (answer == "Yes") {
     alert("Congratulations !");    
-  }
+  } */
 
   else {
     alert("More cake for me then :p !");

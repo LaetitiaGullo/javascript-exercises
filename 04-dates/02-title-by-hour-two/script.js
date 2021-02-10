@@ -14,9 +14,6 @@
     var d = new Date();
     console.log(d);
 
-    var date = Date();
-    console.log(date);
-
     var x = d.getHours();
     var y = d.getMinutes();
     console.log(x + ":" + y);

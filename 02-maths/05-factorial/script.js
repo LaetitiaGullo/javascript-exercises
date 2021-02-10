@@ -30,7 +30,6 @@
         }
 
 
-        console.log(x);    
         return x * fact(x-1);
                 
         }
