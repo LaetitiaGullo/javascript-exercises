@@ -90,11 +90,14 @@
     ];
 
     document.getElementById("run").addEventListener("click", function() {
-        people.forEach((user, i) => {
+        //console.log(people);
+        let people2 = [];
+        people.forEach(user => {
             if (user.age > 18) {
-                console.log(user);
+                people2.push(user);
             }
         });
+        console.log(people2);
 
     });
 })();
