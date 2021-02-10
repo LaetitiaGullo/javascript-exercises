@@ -12,7 +12,7 @@
 (function() {
 
     const fruits = [
-        "apple",
+        //"apple",
         "perry",
         "strawberry",
         "tomato",
@@ -26,6 +26,22 @@
         "cherry",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        
+        var found;
+        
+        for (i = 0; i <= fruits.length; i++) {
+            if (fruits[i] == "apple") {
+                found = true;
+            }
+        }
 
+        if (found == true) {
+            console.log("Yes");
+        }
+        else {
+            console.log("No");
+        }
+
+    });
 })();
