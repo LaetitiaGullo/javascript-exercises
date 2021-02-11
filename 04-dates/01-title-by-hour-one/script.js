@@ -11,9 +11,10 @@
 
 (function() {
 
-    var d = new Date();
-    var x = (d.getHours());
-    console.log(x);
+    let d = new Date();
+    //console.log(d);
+    let x = (d.getHours());
+    //console.log(x);
 
     if (x < 18) {
         document.getElementById("target").innerHTML = "Hello";

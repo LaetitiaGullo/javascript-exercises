@@ -11,12 +11,12 @@
 
 (function() {
 
-    var d = new Date();
-    console.log(d);
+    let d = new Date();
+    //console.log(d);
 
-    var x = d.getHours();
-    var y = d.getMinutes();
-    console.log(x + ":" + y);
+    let x = d.getHours();
+    let y = d.getMinutes();
+    //console.log(x + ":" + y);
 
     if (x <= 17 || y < 30) {
         document.getElementById("target").innerHTML = "Hello";

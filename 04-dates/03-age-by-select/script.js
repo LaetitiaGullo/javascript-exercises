@@ -27,7 +27,7 @@
 
         var age = currentYear-birthYear;
 
-        if (currentMonth <= birthMonth & currentDay < birthDay) {
+        if (currentMonth <= birthMonth || currentDay < birthDay) {
             console.log(age-1);
         }
         
