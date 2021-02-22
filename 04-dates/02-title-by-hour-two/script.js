@@ -14,15 +14,16 @@
     let d = new Date();
     //console.log(d);
 
-    let x = d.getHours();
+    let x = d.getHours()*60;
+    //console.log(x);
     let y = d.getMinutes();
-    //console.log(x + ":" + y);
+    //console.log(x + y);
 
-    if (x <= 17 || y < 30) {
+    if ((x+y) < 1050) {
         document.getElementById("target").innerHTML = "Hello";
     }
 
-    else if (x >= 17 || y >= 30) {
+    else if ((x+y) >= 1050) {
         document.getElementById("target").innerHTML = "Good evening";
     }
 

@@ -14,25 +14,25 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // User input
-        var birthDay = document.getElementById("dob-day").value;
-        var birthMonth = document.getElementById("dob-month").value;
-        var birthYear = document.getElementById("dob-year").value;
+        let birthDay = document.getElementById("dob-day").value;
+        let birthMonth = document.getElementById("dob-month").value;
+        let birthYear = document.getElementById("dob-year").value;
 
 
         // Current date
-        var d = new Date();
-        var currentDay = d.getDate();
-        var currentMonth = d.getMonth()+1;
-        var currentYear = d.getFullYear();
+        let d = new Date();
+        let currentDay = d.getDate();
+        let currentMonth = d.getMonth()+1;
+        let currentYear = d.getFullYear();
 
-        var age = currentYear-birthYear;
+        let age = currentYear-birthYear;
 
-        if (currentMonth <= birthMonth || currentDay < birthDay) {
-            console.log(age-1);
+        if (currentMonth >= birthMonth && currentDay >= birthDay) {
+            console.log(age);
         }
         
         else {
-            console.log(age);
+            console.log(age-1);
         }
        
    });
