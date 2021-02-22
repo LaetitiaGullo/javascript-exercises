@@ -38,5 +38,9 @@
         "arboré",
     ]);
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+        //math.random
+
+
+    });
 })();

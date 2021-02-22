@@ -89,10 +89,13 @@
         },
     ];
 
-    
+    var ageStock = new Array();
+    people.forEach(element => ageStock.push(element['age']));
+    //console.log(ageStock);
+    const reducer = (acc, cur) => acc + cur;
 
     document.getElementById("run").addEventListener("click", function() {
-
+        console.log(ageStock.reduce(reducer));
 
     });
 

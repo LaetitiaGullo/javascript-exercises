@@ -28,6 +28,11 @@
         "cerise",
     ];
 
-    // your code here
+    let newTab = [...new Set(fruits)];
+
+    document.getElementById("run").addEventListener("click", function() {
+        console.log(newTab);
+
+    });
 
 })();

@@ -12,7 +12,7 @@
 (function() {
 
     const fruits = [
-        //"apple",
+        "apple",
         "perry",
         "strawberry",
         "tomato",

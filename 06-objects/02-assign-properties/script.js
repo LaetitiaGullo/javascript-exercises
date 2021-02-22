@@ -26,5 +26,13 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    let obj = []
+
+        computers.forEach( el => {
+            el = {...defaultProps, ...el }
+            obj.push(el)
+        })
+        computers.splice(0, computers.length , ...obj)
+
+        console.log(computers)
 })();
