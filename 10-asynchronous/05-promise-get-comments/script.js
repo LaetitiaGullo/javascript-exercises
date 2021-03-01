@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.querySelector("#run").addEventListener("click", () => {
+        window.lib.getPosts().then((posts) => {
+            Promise.all(
+                posts.map(post=>window.lib.getComments(post.id))
+
+            ).then(()=> {
+                postsComments.forEach((comments, i)=> {
+                    posts[i].comments = comments;
+                });
+                console.log(posts);
+            })
+        })
+    })
 })();
